@@ -1,1 +1,6 @@
 /* style */
+body {
+  font: 16px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
+  margin: 0;
+  padding: 0;
+}

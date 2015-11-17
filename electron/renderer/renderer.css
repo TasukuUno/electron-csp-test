@@ -1,0 +1,11 @@
+/* style */
+.section {
+  height: 190px;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  display: block;
+}
+
+section.section{
+  border: 0;
+}
