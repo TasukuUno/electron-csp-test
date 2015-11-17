@@ -29,6 +29,7 @@ function registerProtocol() {
 }
 
 function openWindow() {
-  var mainWindow = new BrowserWindow({width: 800, height: 600});
+  var mainWindow = new BrowserWindow({width: 1200, height: 800});
   mainWindow.loadURL('file://' + __dirname + '/../renderer/index.html');
+  mainWindow.openDevTools();
 }
