@@ -1,0 +1,22 @@
+{
+  "name": "electron-csp-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron/main/index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TasukuUno/electron-csp-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TasukuUno/electron-csp-test/issues"
+  },
+  "homepage": "https://github.com/TasukuUno/electron-csp-test#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.35.0"
+  }
+}
