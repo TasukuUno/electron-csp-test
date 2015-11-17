@@ -6,11 +6,13 @@
   </head>
   <body>
     <section class='section'>
+      <h1>Renderer HTML</h1>
       <div id='location'></div>
       <a href='javascript:void(0)' id='play'>get and play</a>
     </section>
-    <webview src="http://tasukuuno.github.io/electron-csp-test/public/" class='section'></webview>
-    <webview src="https://tasukuuno.github.io/electron-csp-test/public/" class='section'></webview>
+    <webview src="http://tasukuuno.github.io/electron-csp-test/public/" id="webview-http" disablewebsecurity='true' class='section'></webview>
+    <webview src="https://tasukuuno.github.io/electron-csp-test/public/" id="webview-https" disablewebsecurity='true' class='section'></webview>
     <script src='../../common/index.js'></script>
+    <script src='renderer.js'></script>
   </body>
 </html>
