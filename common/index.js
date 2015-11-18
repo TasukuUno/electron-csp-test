@@ -17,6 +17,15 @@
     });
   }, false);
 
+  var electron = window && window.require('electron');
+  if (electron) {
+    electronAction();
+  }
+
+  function electronAction(electron) {
+    electron.webFrame.registerUrlSchemeAsBypassingCSP('audio-test-001');
+  }
+
   function get(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);

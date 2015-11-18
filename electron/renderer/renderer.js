@@ -4,10 +4,11 @@
     return document.querySelector(selector);
   };
 
-
-  setTimeout(function () {
-    $('#webview-http').openDevTools();
-    $('#webview-https').openDevTools();
-  }, 1000 * 3);
+  [$('#webview-http'), $('#webview-https')].forEach(function (webview) {
+    webview.addEventListener("dom-ready", function() {
+      webview.openDevTools();
+      console.dir(Object.keys(webview));
+    });
+  });
 
 })();
