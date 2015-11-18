@@ -23,7 +23,9 @@
   }
 
   function electronAction(electron) {
-    electron.webFrame.registerURLSchemeAsBypassingCSP('audio-test-001');
+    var webFrame = electron.webFrame;
+    webFrame.registerURLSchemeAsBypassingCSP('audio-test-001');
+    webFrame.registerURLSchemeAsSecure('audio-test-001');
   }
 
   function get(url, callback) {
