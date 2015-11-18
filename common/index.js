@@ -19,11 +19,11 @@
 
   var electron = window && window.require('electron');
   if (electron) {
-    electronAction();
+    electronAction(electron);
   }
 
   function electronAction(electron) {
-    electron.webFrame.registerUrlSchemeAsBypassingCSP('audio-test-001');
+    electron.webFrame.registerURLSchemeAsBypassingCSP('audio-test-001');
   }
 
   function get(url, callback) {
